@@ -1,0 +1,68 @@
+<apex:page controller="showExpensesListForContactController" standardStylesheets="false">
+    
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    	<apex:pageBlock title="Expense List" id="expense_list">
+            <apex:form >
+            	<apex:commandLink action="{! showBusinessTrips }"
+            		reRender="expense_list">Business Trips Expenses
+        		</apex:commandLink>
+            	<br/>
+            	<apex:commandLink action="{! showClientMeetings }"
+            		reRender="expense_list">Client Meetings Expenses
+        		</apex:commandLink>
+            
+            	<br/>
+
+                <apex:commandLink action="{! showAllExpenses }"
+            		reRender="expense_list"> All Expenses
+        		</apex:commandLink>
+                
+            </apex:form>
+            <br/>
+
+	       <!-- Expenses List -->
+
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+      				<tr>
+        				<th>Expense Name</th>
+        				<th>Category</th>
+        				<th>Record Type</th>
+                        <th>Amount</th>
+                        <th>Tax</th>
+                        <th>Client Company</th>
+                        <th>Submitted</th>
+      				</tr>
+    			</thead>
+                
+    			<tbody>
+                    <apex:repeat value="{!expenses}" var="ex">
+      				<tr>
+        				<td><a href="/{!ex.id}"
+id="lookup{!ex.id}opp4"
+onblur="LookupHoverDetail.getHover('lookup{!ex.id}opp4').hide();"
+onfocus="LookupHoverDetail.getHover('lookup{!ex.id}opp4', '/{!ex.id}/m?retURL=/{!ex.id}&isAjaxRequest=1').show();"
+onmouseout="LookupHoverDetail.getHover('lookup{!ex.id}opp4').hide();"
+onmouseover="LookupHoverDetail.getHover('lookup{!ex.id}opp4', '/{!ex.id}/m?retURL=/{!ex.id}&isAjaxRequest=1').show();">
+{!ex.Name}
+</a>
+                        </td>
+        				<td>{!ex.Category__c }</td>
+        				<td>{!ex.RecordType.Name }</td>
+                        <td>{!ex.Amount__c }</td>
+                        <td>{!ex.Tax__c }</td>
+                        <td>{!ex.Client_Company__c}</td>
+                        <td>{!ex.Submitted__c }</td>
+      				</tr>
+                        </apex:repeat>
+    			</tbody>
+                
+  			</table>
+
+   		</apex:pageBlock>
+    
+</apex:page>
