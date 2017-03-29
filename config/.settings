@@ -1,0 +1,20 @@
+{
+    "projectName": "Altimetrik Onboarding Test",
+    "username": "pacosta@altimetrik.com",
+    "id": "332fc7c0-0f27-11e7-acab-d9fcead96284",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na40.salesforce.com",
+    "workspace": "/Users/pacosta/Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "ApprovalProcess",
+        "CustomObject",
+        "CustomTab",
+        "StaticResource"
+    ]
+}
