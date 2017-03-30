@@ -30,27 +30,27 @@
     </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>ApprovedExpense</name>
-            <type>FieldUpdate</type>
+            <name>AlertExpenseApproved</name>
+            <type>Alert</type>
         </action>
         <action>
-            <name>ExpenseIsApproved</name>
-            <type>Alert</type>
+            <name>UpdateApprovedStatus</name>
+            <type>FieldUpdate</type>
         </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
-            <name>ExpenseIsRejected</name>
+            <name>AlertNotApprovedExpense</name>
             <type>Alert</type>
         </action>
         <action>
-            <name>Rejected_Expense</name>
+            <name>RejectExpenseSubmition</name>
             <type>FieldUpdate</type>
         </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>Approve Expense</label>
+    <label>ApprovedExpense</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>

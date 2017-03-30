@@ -1,0 +1,203 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:59:17.0 (623685)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+17:59:17.0 (655384)|EXECUTION_STARTED
+17:59:17.0 (659166)|CODE_UNIT_STARTED|[EXTERNAL]|01p46000002uaCV|TestAccountDeletion.TestDeleteAccountWithOneOpportunity
+17:59:17.0 (1338433)|HEAP_ALLOCATE|[72]|Bytes:3
+17:59:17.0 (1376299)|HEAP_ALLOCATE|[77]|Bytes:152
+17:59:17.0 (1387772)|HEAP_ALLOCATE|[342]|Bytes:408
+17:59:17.0 (1398219)|HEAP_ALLOCATE|[355]|Bytes:408
+17:59:17.0 (1408296)|HEAP_ALLOCATE|[467]|Bytes:48
+17:59:17.0 (1433102)|HEAP_ALLOCATE|[139]|Bytes:6
+17:59:17.0 (1445251)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:38
+17:59:17.0 (1452085)|METHOD_ENTRY|[2]|01p46000002uaCV|TestAccountDeletion.TestAccountDeletion()
+17:59:17.0 (1456296)|STATEMENT_EXECUTE|[2]
+17:59:17.0 (1461909)|STATEMENT_EXECUTE|[2]
+17:59:17.0 (1465473)|METHOD_EXIT|[2]|TestAccountDeletion
+17:59:17.0 (1500449)|HEAP_ALLOCATE|[50]|Bytes:5
+17:59:17.0 (1521470)|HEAP_ALLOCATE|[56]|Bytes:5
+17:59:17.0 (1526191)|HEAP_ALLOCATE|[64]|Bytes:7
+17:59:17.0 (1563319)|STATEMENT_EXECUTE|[4]
+17:59:17.0 (1564838)|STATEMENT_EXECUTE|[7]
+17:59:17.0 (1606033)|HEAP_ALLOCATE|[7]|Bytes:4
+17:59:17.0 (1679238)|HEAP_ALLOCATE|[7]|Bytes:12
+17:59:17.0 (2864508)|VARIABLE_ASSIGNMENT|[7]|this.Name|"Test Account"|0x5adfa00c
+17:59:17.0 (2896079)|VARIABLE_SCOPE_BEGIN|[7]|acct|Account|true|false
+17:59:17.0 (2911241)|VARIABLE_ASSIGNMENT|[7]|acct|{"Name":"Test Account"}|0x5adfa00c
+17:59:17.0 (2914526)|STATEMENT_EXECUTE|[8]
+17:59:17.0 (2940381)|HEAP_ALLOCATE|[8]|Bytes:8
+17:59:17.0 (2945991)|DML_BEGIN|[8]|Op:Insert|Type:Account|Rows:1
+17:59:17.0 (2964873)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:59:17.0 (36651894)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Account
+17:59:17.0 (37246469)|CODE_UNIT_FINISHED|Workflow:Account
+17:59:17.0 (38174203)|DML_END|[8]
+17:59:17.0 (38195853)|STATEMENT_EXECUTE|[9]
+17:59:17.0 (38240637)|HEAP_ALLOCATE|[9]|Bytes:4
+17:59:17.0 (38347627)|HEAP_ALLOCATE|[9]|Bytes:12
+17:59:17.0 (38366945)|HEAP_ALLOCATE|[9]|Bytes:24
+17:59:17.0 (39291741)|VARIABLE_ASSIGNMENT|[9]|this.Name|"Test Account Opportu (4 more) ..."|0x2cfef68d
+17:59:17.0 (39300066)|HEAP_ALLOCATE|[10]|Bytes:11
+17:59:17.0 (39329158)|VARIABLE_ASSIGNMENT|[9]|this.StageName|"Prospecting"|0x2cfef68d
+17:59:17.0 (39369951)|HEAP_ALLOCATE|[11]|Bytes:4
+17:59:17.0 (39400534)|HEAP_ALLOCATE|[11]|Bytes:4
+17:59:17.0 (39439333)|VARIABLE_ASSIGNMENT|[9]|this.CloseDate|"2017-04-22T00:00:00.000Z"|0x2cfef68d
+17:59:17.0 (39485942)|VARIABLE_ASSIGNMENT|[9]|this.AccountId|"00146000004a9zUAAQ"|0x2cfef68d
+17:59:17.0 (39516379)|VARIABLE_SCOPE_BEGIN|[9]|opp|Opportunity|true|false
+17:59:17.0 (39541899)|VARIABLE_ASSIGNMENT|[9]|opp|{"Name":"Test Account Opportu (4 more) ...","StageName":"Prospecting","CloseDate":"2017-04-22T00:00:00.000Z","AccountId":"00146000004a9zUAAQ"}|0x2cfef68d
+17:59:17.0 (39547873)|STATEMENT_EXECUTE|[13]
+17:59:17.0 (39569112)|HEAP_ALLOCATE|[13]|Bytes:8
+17:59:17.0 (39575037)|DML_BEGIN|[13]|Op:Insert|Type:Opportunity|Rows:1
+17:59:17.0 (39599166)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:59:17.0 (83047298)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Opportunity
+17:59:17.0 (92184244)|WF_RULE_EVAL_BEGIN|Workflow
+17:59:17.0 (92234908)|WF_CRITERIA_BEGIN|[Opportunity: Test Account Opportunity 00646000002yUSV]|LargeOpportunity|01Q460000000CEy|ON_CREATE_OR_TRIGGERING_UPDATE|0
+17:59:17.0 (96069139)|WF_RULE_FILTER|[Opportunity : Amount greater than 500000] 
+AND [Opportunity : Closed equals false]
+17:59:17.0 (96083830)|WF_RULE_EVAL_VALUE|
+17:59:17.0 (96088266)|WF_CRITERIA_END|false
+17:59:17.0 (96097408)|WF_SPOOL_ACTION_BEGIN|Workflow
+17:59:17.0 (96105700)|WF_ACTION| None
+17:59:17.0 (96108343)|WF_RULE_EVAL_END
+17:59:17.0 (96155146)|WF_ACTIONS_END| None
+17:59:17.0 (96161420)|CODE_UNIT_FINISHED|Workflow:Opportunity
+17:59:17.0 (100481026)|DML_END|[13]
+17:59:17.0 (100504433)|STATEMENT_EXECUTE|[16]
+17:59:17.0 (100573821)|HEAP_ALLOCATE|[16]|Bytes:63
+17:59:17.0 (100594133)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+17:59:17.0 (100596571)|STATEMENT_EXECUTE|[1]
+17:59:17.0 (100604991)|SYSTEM_METHOD_EXIT|[1]|Test
+17:59:17.0 (100618843)|METHOD_ENTRY|[16]||System.Test.startTest()
+17:59:17.0 (102134687)|METHOD_EXIT|[16]||System.Test.startTest()
+17:59:17.0 (102143189)|STATEMENT_EXECUTE|[17]
+17:59:17.0 (102203246)|HEAP_ALLOCATE|[17]|Bytes:8
+17:59:17.0 (102210325)|DML_BEGIN|[17]|Op:Delete|Type:Account|Rows:1
+17:59:17.0 (102237354)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:59:17.0 (123583457)|CODE_UNIT_STARTED|[EXTERNAL]|01q46000000QOW3|AccountDeletion on Account trigger event BeforeDelete for [00146000004a9zU]
+17:59:17.0 (123624884)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:59:17.0 (123723570)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:59:17.0 (123730946)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountDeletion|true|false
+17:59:17.0 (123774624)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x15dcd984
+17:59:17.0 (123807321)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:59:17.0 (123812629)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountDeletion|true|false
+17:59:17.0 (123819401)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x15dcd984
+17:59:17.0 (123823808)|STATEMENT_EXECUTE|[1]
+17:59:17.0 (123829938)|HEAP_ALLOCATE|[4]|Bytes:91
+17:59:17.0 (123840487)|HEAP_ALLOCATE|[4]|Bytes:4
+17:59:17.0 (123850314)|HEAP_ALLOCATE|[4]|Bytes:7
+17:59:17.0 (124196616)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id FROM Account 
+17:59:17.0 (128045004)|SOQL_EXECUTE_END|[4]|Rows:1
+17:59:17.0 (128056379)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:59:17.0 (128191488)|HEAP_ALLOCATE|[4]|Bytes:49
+17:59:17.0 (128197408)|HEAP_ALLOCATE|[4]|Bytes:8
+17:59:17.0 (128219834)|SYSTEM_METHOD_ENTRY|[7]|QueryLocatorIterator.QueryLocatorIterator()
+17:59:17.0 (128222378)|STATEMENT_EXECUTE|[7]
+17:59:17.0 (128228650)|SYSTEM_METHOD_EXIT|[7]|QueryLocatorIterator
+17:59:17.0 (128233417)|HEAP_ALLOCATE|[4]|Bytes:28
+17:59:17.0 (128245417)|HEAP_ALLOCATE|[4]|Bytes:8
+17:59:17.0 (128255638)|HEAP_ALLOCATE|[4]|Bytes:8
+17:59:17.0 (128257155)|HEAP_ALLOCATE|[4]|Bytes:8
+17:59:17.0 (128260694)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+17:59:17.0 (128294394)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x74eda4bf
+17:59:17.0 (128298321)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+17:59:17.0 (128312128)|VARIABLE_ASSIGNMENT|[15]|values|[{"Id":"00146000004a9zUAAQ"}]|0xc8e6638
+17:59:17.0 (128314516)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+17:59:17.0 (128324959)|VARIABLE_ASSIGNMENT|[15]|ql|{"query":"SELECT Id FROM Accou (71 more) ..."}|0x16853395
+17:59:17.0 (128326762)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+17:59:17.0 (128331057)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|1
+17:59:17.0 (128332757)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+17:59:17.0 (128334778)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|49999
+17:59:17.0 (128402888)|HEAP_ALLOCATE|[4]|Bytes:28
+17:59:17.0 (128417466)|METHOD_ENTRY|[4]||Database.QueryLocatorIterator.hasNext()
+17:59:17.0 (128489370)|METHOD_EXIT|[4]||Database.QueryLocatorIterator.hasNext()
+17:59:17.0 (128494219)|METHOD_ENTRY|[4]||Database.QueryLocatorIterator.next()
+17:59:17.0 (128559160)|METHOD_EXIT|[4]||Database.QueryLocatorIterator.next()
+17:59:17.0 (128565193)|VARIABLE_SCOPE_BEGIN|[4]|a|Account|true|false
+17:59:17.0 (128573495)|VARIABLE_ASSIGNMENT|[4]|a|{"Id":"00146000004a9zUAAQ"}|0x6a5d158f
+17:59:17.0 (128577054)|STATEMENT_EXECUTE|[6]
+17:59:17.0 (128578596)|STATEMENT_EXECUTE|[7]
+17:59:17.0 (128670060)|HEAP_ALLOCATE|[8]|Bytes:49
+17:59:17.0 (128743341)|VF_PAGE_MESSAGE|Cannot delete account with related opportunities.
+17:59:17.0 (128755741)|METHOD_ENTRY|[4]||Database.QueryLocatorIterator.hasNext()
+17:59:17.0 (128769505)|METHOD_EXIT|[4]||Database.QueryLocatorIterator.hasNext()
+17:59:17.0 (128776232)|VARIABLE_ASSIGNMENT|[4]|a|null|
+17:59:17.128 (128791839)|CUMULATIVE_LIMIT_USAGE
+17:59:17.128 (128791839)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:59:17.128 (128791839)|TESTING_LIMITS
+17:59:17.128 (128791839)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:59:17.128 (128791839)|CUMULATIVE_LIMIT_USAGE_END
+
+17:59:17.0 (129579131)|CODE_UNIT_FINISHED|AccountDeletion on Account trigger event BeforeDelete for [00146000004a9zU]
+17:59:17.0 (131003610)|DML_END|[17]
+17:59:17.0 (131129970)|HEAP_ALLOCATE|[17]|Bytes:4
+17:59:17.0 (131156155)|VARIABLE_SCOPE_BEGIN|[17]|result|Database.DeleteResult|true|false
+17:59:17.0 (131239137)|VARIABLE_ASSIGNMENT|[17]|result|"DeleteResult [id=00146000004a9zUAAQ, success=false, errors=[Error [statusCode=FIELD_CUSTOM_VALIDATION_EXCEPTION, code=[xmlrpc=-1, statusCode=FIELD_CUSTOM_VALIDATION_EXCEPTION, exceptionCode=null, scope=PublicApi, http=400], message=Cannot delete account with related opportunities., fields=null]]]"|0x4b8a1166
+17:59:17.0 (131246231)|STATEMENT_EXECUTE|[18]
+17:59:17.0 (131258501)|METHOD_ENTRY|[18]||System.Test.stopTest()
+17:59:17.0 (131948161)|METHOD_EXIT|[18]||System.Test.stopTest()
+17:59:17.0 (131952946)|STATEMENT_EXECUTE|[23]
+17:59:17.0 (132002786)|STATEMENT_EXECUTE|[24]
+17:59:17.0 (132014131)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:59:17.0 (132054492)|HEAP_ALLOCATE|[24]|Bytes:8
+17:59:17.0 (132098766)|STATEMENT_EXECUTE|[25]
+17:59:17.0 (132109239)|HEAP_ALLOCATE|[26]|Bytes:8
+17:59:17.0 (132156746)|HEAP_ALLOCATE|[26]|Bytes:4
+17:59:17.0 (132176256)|HEAP_ALLOCATE|[26]|Bytes:49
+17:59:17.132 (132205951)|CUMULATIVE_LIMIT_USAGE
+17:59:17.132 (132205951)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:59:17.132 (132205951)|TESTING_LIMITS
+17:59:17.132 (132205951)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:59:17.132 (132205951)|CUMULATIVE_LIMIT_USAGE_END
+
+17:59:17.0 (132232751)|CODE_UNIT_FINISHED|TestAccountDeletion.TestDeleteAccountWithOneOpportunity
+17:59:17.0 (132944733)|EXECUTION_FINISHED

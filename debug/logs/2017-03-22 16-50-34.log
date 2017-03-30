@@ -1,0 +1,57 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+16:50:16.0 (317716)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+16:50:16.0 (342043)|EXECUTION_STARTED
+16:50:16.0 (348866)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+16:50:16.0 (374939)|CODE_UNIT_STARTED|[EXTERNAL]|01q46000000Qd5z|UpdateOrDelete on Expense trigger event BeforeUpdate for [a0F46000000Fp6r]
+16:50:16.0 (419580)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+16:50:16.0 (477063)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+16:50:16.0 (795853)|HEAP_ALLOCATE|[72]|Bytes:3
+16:50:16.0 (834006)|HEAP_ALLOCATE|[77]|Bytes:152
+16:50:16.0 (847409)|HEAP_ALLOCATE|[342]|Bytes:408
+16:50:16.0 (856153)|HEAP_ALLOCATE|[355]|Bytes:408
+16:50:16.0 (865042)|HEAP_ALLOCATE|[467]|Bytes:48
+16:50:16.0 (887532)|HEAP_ALLOCATE|[139]|Bytes:6
+16:50:16.0 (909615)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:16.0 (916671)|VARIABLE_SCOPE_BEGIN|[1]|this|UpdateOrDelete|true|false
+16:50:16.0 (953043)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1ff6456e
+16:50:16.0 (985413)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:16.0 (989776)|VARIABLE_SCOPE_BEGIN|[1]|this|UpdateOrDelete|true|false
+16:50:16.0 (995842)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1ff6456e
+16:50:16.0 (1001516)|STATEMENT_EXECUTE|[1]
+16:50:16.0 (1033285)|HEAP_ALLOCATE|[50]|Bytes:5
+16:50:16.0 (1054667)|HEAP_ALLOCATE|[56]|Bytes:5
+16:50:16.0 (1059997)|HEAP_ALLOCATE|[64]|Bytes:7
+16:50:16.0 (1342658)|HEAP_ALLOCATE|[3]|Bytes:5
+16:50:16.0 (1380458)|VARIABLE_SCOPE_BEGIN|[3]|ex|Expense__c|true|false
+16:50:16.0 (1838919)|VARIABLE_ASSIGNMENT|[3]|ex|{"Expense_Status__c":"SUBMITTED","LastModifiedDate":"2017-03-22T19:50:07.000Z","IsDeleted":false,"Name":"Test44","SystemModstamp":"2017-03-22T19:50:07.000Z","Employee__c":"00346000002ojVWAAY","OwnerId":"00546000000IihsAAC","CreatedById":"00546000000IihsAAC","Amount__c":3000,"Submitted__c":true,"RecordTypeId":"012460000005G1FAAU","CreatedDate":"2017-03-22T19:05:57.000Z","Id":"a0F46000000Fp6rEAC","LastModifiedById":"00546000000IihsAAC","Tax__c":390.00}|0x5358e48a
+16:50:16.0 (1850229)|STATEMENT_EXECUTE|[3]
+16:50:16.0 (1883246)|HEAP_ALLOCATE|[5]|Bytes:13
+16:50:16.0 (1913477)|STATEMENT_EXECUTE|[5]
+16:50:16.0 (1916454)|STATEMENT_EXECUTE|[7]
+16:50:16.0 (2064211)|HEAP_ALLOCATE|[7]|Bytes:43
+16:50:16.0 (2355998)|EXCEPTION_THROWN|[7]|System.FinalException: SObject row does not allow errors
+16:50:16.0 (2781261)|HEAP_ALLOCATE|[7]|Bytes:37
+16:50:16.0 (2900770)|FATAL_ERROR|System.FinalException: SObject row does not allow errors
+
+Trigger.UpdateOrDelete: line 7, column 1
+16:50:16.0 (2911547)|FATAL_ERROR|System.FinalException: SObject row does not allow errors
+
+Trigger.UpdateOrDelete: line 7, column 1
+16:50:16.2 (2968759)|CUMULATIVE_LIMIT_USAGE
+16:50:16.2 (2968759)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:50:16.2 (2968759)|CUMULATIVE_LIMIT_USAGE_END
+
+16:50:16.0 (4003902)|CODE_UNIT_FINISHED|UpdateOrDelete on Expense trigger event BeforeUpdate for [a0F46000000Fp6r]

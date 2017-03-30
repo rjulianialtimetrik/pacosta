@@ -1,0 +1,80 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+14:20:45.0 (289309)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+14:20:45.0 (313966)|EXECUTION_STARTED
+14:20:45.0 (317731)|CODE_UNIT_STARTED|[EXTERNAL]|06646000001BW08|VF: /apex/ListOfEmployees
+14:20:45.0 (831377)|VF_DESERIALIZE_VIEWSTATE_BEGIN|06646000001BW08
+14:20:45.0 (26071820)|HEAP_ALLOCATE|[72]|Bytes:3
+14:20:45.0 (26112349)|HEAP_ALLOCATE|[77]|Bytes:152
+14:20:45.0 (26125979)|HEAP_ALLOCATE|[342]|Bytes:408
+14:20:45.0 (26140668)|HEAP_ALLOCATE|[355]|Bytes:408
+14:20:45.0 (26153850)|HEAP_ALLOCATE|[467]|Bytes:48
+14:20:45.0 (26180593)|HEAP_ALLOCATE|[139]|Bytes:6
+14:20:45.0 (27145056)|VF_DESERIALIZE_VIEWSTATE_END
+14:20:45.0 (28473041)|SYSTEM_MODE_ENTER|true
+14:20:45.0 (28719658)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+14:20:45.0 (28730012)|METHOD_ENTRY|[1]|01p46000002wayn|ExpenseController.ExpenseController()
+14:20:45.0 (28735174)|STATEMENT_EXECUTE|[1]
+14:20:45.0 (28740334)|STATEMENT_EXECUTE|[1]
+14:20:45.0 (28747428)|METHOD_EXIT|[1]|ExpenseController
+14:20:45.0 (28755430)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:20:45.0 (28761946)|VARIABLE_SCOPE_BEGIN|[6]|this|ExpenseController|true|false
+14:20:45.0 (28813758)|VARIABLE_ASSIGNMENT|[6]|this|{"queryString":"WHERE RecordType.Nam (21 more) ..."}|0x12027b2a
+14:20:45.0 (28822475)|STATEMENT_EXECUTE|[6]
+14:20:45.0 (28823899)|STATEMENT_EXECUTE|[8]
+14:20:45.0 (28827208)|HEAP_ALLOCATE|[8]|Bytes:161
+14:20:45.0 (28849020)|HEAP_ALLOCATE|[8]|Bytes:202
+14:20:45.0 (28884044)|HEAP_ALLOCATE|[50]|Bytes:5
+14:20:45.0 (28905564)|HEAP_ALLOCATE|[56]|Bytes:5
+14:20:45.0 (28911743)|HEAP_ALLOCATE|[64]|Bytes:7
+14:20:45.0 (31384606)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT Category__c, RecordType.Name, Amount__c, Tax__c, Client_Company__c, Submitted__c, Employee__r.Id, Employee__r.Name, Employee__r.Birthdate FROM Expense__c WHERE RecordType.Name = 'Client Meetings'
+14:20:45.0 (41032770)|SOQL_EXECUTE_END|[8]|Rows:2
+14:20:45.0 (41054920)|HEAP_ALLOCATE|[8]|Bytes:12
+14:20:45.0 (41088739)|HEAP_ALLOCATE|[8]|Bytes:684
+14:20:45.0 (41128409)|HEAP_ALLOCATE|[8]|Bytes:12
+14:20:45.0 (41149657)|VARIABLE_SCOPE_BEGIN|[8]|results|List<Expense__c>|true|false
+14:20:45.0 (41196469)|VARIABLE_ASSIGNMENT|[8]|results|[{"Category__c":"Road Meals","RecordTypeId":"012460000005G1KAAU","Amount__c":8900,"Tax__c":1157.00,"Submitted__c":false,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000FmUwEAK","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}},{"Category__c":"Event Registration","RecordTypeId":"012460000005G1KAAU","Amount__c":5600,"Tax__c":728.00,"Submitted__c":false,"Employee__c":"00346000002oeLWAAY","Id":"a0F46000000FBc6EAG","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002oeLWAAY","Name":"Paulo Acosta"}}]|0x5b88a58d
+14:20:45.0 (41207142)|STATEMENT_EXECUTE|[12]
+14:20:45.0 (42627204)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:20:45.0 (42636796)|VARIABLE_SCOPE_BEGIN|[43]|this|ExpenseController|true|false
+14:20:45.0 (42666349)|VARIABLE_ASSIGNMENT|[43]|this|{"queryString":"WHERE RecordType.Nam (21 more) ..."}|0x12027b2a
+14:20:45.0 (42676630)|STATEMENT_EXECUTE|[43]
+14:20:45.0 (42678760)|STATEMENT_EXECUTE|[45]
+14:20:45.0 (42692755)|VARIABLE_ASSIGNMENT|[45]|this.queryString|""|0x12027b2a
+14:20:45.0 (45365504)|SYSTEM_MODE_ENTER|true
+14:20:45.0 (45398587)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:20:45.0 (45403631)|VARIABLE_SCOPE_BEGIN|[6]|this|ExpenseController|true|false
+14:20:45.0 (45419715)|VARIABLE_ASSIGNMENT|[6]|this|{"queryString":""}|0x12027b2a
+14:20:45.0 (45426652)|STATEMENT_EXECUTE|[6]
+14:20:45.0 (45428591)|STATEMENT_EXECUTE|[8]
+14:20:45.0 (45441101)|HEAP_ALLOCATE|[8]|Bytes:161
+14:20:45.0 (45740372)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT Category__c, RecordType.Name, Amount__c, Tax__c, Client_Company__c, Submitted__c, Employee__r.Id, Employee__r.Name, Employee__r.Birthdate FROM Expense__c 
+14:20:45.0 (50251196)|SOQL_EXECUTE_END|[8]|Rows:5
+14:20:45.0 (50268226)|HEAP_ALLOCATE|[8]|Bytes:24
+14:20:45.0 (50312538)|HEAP_ALLOCATE|[8]|Bytes:1579
+14:20:45.0 (50336185)|HEAP_ALLOCATE|[8]|Bytes:24
+14:20:45.0 (50352735)|VARIABLE_SCOPE_BEGIN|[8]|results|List<Expense__c>|true|false
+14:20:45.0 (50434007)|VARIABLE_ASSIGNMENT|[8]|results|[{"Category__c":"Road Meals","RecordTypeId":"012460000005G1KAAU","Amount__c":8900,"Tax__c":1157.00,"Submitted__c":false,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000FmUwEAK","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}},{"RecordTypeId":"012460000005G1FAAU","Amount__c":3000,"Tax__c":390.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp6rEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}},{"Category__c":"Event Registration","RecordTypeId":"012460000005G1FAAU","Amount__c":3499,"Tax__c":454.87,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp76EAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}},{"Category__c":"Event Registration","RecordTypeId":"012460000005G1KAAU","Amount__c":5600,"Tax__c":728.00,"Submitted__c":false,"Employee__c":"00346000002oeLWAAY","Id":"a0F46000000FBc6EAG","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002oeLWAAY","Name":"Paulo Acosta"}},{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":3500,"Tax__c":455.00,"Submitted__c":false,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FBblEAG","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}]|0xf20396c
+14:20:45.0 (50448437)|STATEMENT_EXECUTE|[12]
+14:20:45.0 (58820386)|VF_SERIALIZE_VIEWSTATE_BEGIN|06646000001BW08
+14:20:45.0 (69727887)|VF_SERIALIZE_VIEWSTATE_END
+14:20:45.0 (71241098)|CODE_UNIT_STARTED|[EXTERNAL]|Generate Metadata
+14:20:45.0 (71769374)|CODE_UNIT_FINISHED|Generate Metadata
+14:20:45.73 (73618557)|CUMULATIVE_LIMIT_USAGE
+14:20:45.73 (73618557)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 7 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:20:45.73 (73618557)|CUMULATIVE_LIMIT_USAGE_END
+
+14:20:45.0 (73705758)|CODE_UNIT_FINISHED|VF: /apex/ListOfEmployees
+14:20:45.0 (74457733)|EXECUTION_FINISHED

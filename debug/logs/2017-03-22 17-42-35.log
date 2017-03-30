@@ -1,0 +1,64 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:42:10.0 (309344)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+17:42:10.0 (342891)|EXECUTION_STARTED
+17:42:10.0 (347327)|CODE_UNIT_STARTED|[EXTERNAL]|01p46000002xICK|TestExpenseUpdateOrDelete.testDeleteExpense
+17:42:10.0 (540770)|HEAP_ALLOCATE|[72]|Bytes:3
+17:42:10.0 (578582)|HEAP_ALLOCATE|[77]|Bytes:152
+17:42:10.0 (594690)|HEAP_ALLOCATE|[342]|Bytes:408
+17:42:10.0 (607450)|HEAP_ALLOCATE|[355]|Bytes:408
+17:42:10.0 (619030)|HEAP_ALLOCATE|[467]|Bytes:48
+17:42:10.0 (648452)|HEAP_ALLOCATE|[139]|Bytes:6
+17:42:10.0 (665947)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:20
+17:42:10.0 (674858)|METHOD_ENTRY|[2]|01p46000002xICK|TestExpenseUpdateOrDelete.TestExpenseUpdateOrDelete()
+17:42:10.0 (680227)|STATEMENT_EXECUTE|[2]
+17:42:10.0 (685206)|STATEMENT_EXECUTE|[2]
+17:42:10.0 (689470)|METHOD_EXIT|[2]|TestExpenseUpdateOrDelete
+17:42:10.0 (726244)|HEAP_ALLOCATE|[50]|Bytes:5
+17:42:10.0 (748071)|HEAP_ALLOCATE|[56]|Bytes:5
+17:42:10.0 (756071)|HEAP_ALLOCATE|[64]|Bytes:7
+17:42:10.0 (793670)|STATEMENT_EXECUTE|[4]
+17:42:10.0 (795404)|STATEMENT_EXECUTE|[6]
+17:42:10.0 (838457)|HEAP_ALLOCATE|[6]|Bytes:4
+17:42:10.0 (921728)|HEAP_ALLOCATE|[6]|Bytes:12
+17:42:10.0 (968291)|VARIABLE_ASSIGNMENT|[6]|this.Name|"Test Expense"|0xbe0a2fc
+17:42:10.0 (995408)|VARIABLE_ASSIGNMENT|[6]|this.Submitted__c|true|0xbe0a2fc
+17:42:10.0 (1018996)|VARIABLE_SCOPE_BEGIN|[6]|expense|Expense__c|true|false
+17:42:10.0 (1038087)|VARIABLE_ASSIGNMENT|[6]|expense|{"Name":"Test Expense","Submitted__c":true}|0xbe0a2fc
+17:42:10.0 (1041360)|STATEMENT_EXECUTE|[7]
+17:42:10.0 (1067457)|HEAP_ALLOCATE|[7]|Bytes:8
+17:42:10.0 (1073953)|DML_BEGIN|[7]|Op:Insert|Type:Expense__c|Rows:1
+17:42:10.0 (1097133)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:42:10.0 (8566564)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Expense:new
+17:42:10.0 (8575015)|VALIDATION_RULE|03d46000000DMqh|InsertOtherValue
+17:42:10.0 (8864199)|VALIDATION_FORMULA|AND (IF (ISPICKVAL( Category__c , "Other"), true, false),  ISBLANK( Other__c ) )|Category__c=null , Other__c=null
+17:42:10.0 (8870298)|VALIDATION_PASS
+17:42:10.0 (8897751)|CODE_UNIT_FINISHED|Validation:Expense:new
+17:42:10.0 (10071255)|DML_END|[7]
+17:42:10.0 (10174822)|VF_PAGE_MESSAGE|Required fields are missing: [Employee__c, Amount__c]
+17:42:10.0 (10330454)|EXCEPTION_THROWN|[7]|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Employee__c, Amount__c]: [Employee__c, Amount__c]
+17:42:10.0 (10618356)|HEAP_ALLOCATE|[7]|Bytes:161
+17:42:10.0 (10858839)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Employee__c, Amount__c]: [Employee__c, Amount__c]
+
+Class.TestExpenseUpdateOrDelete.testDeleteExpense: line 7, column 1
+17:42:10.0 (10974619)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Employee__c, Amount__c]: [Employee__c, Amount__c]
+
+Class.TestExpenseUpdateOrDelete.testDeleteExpense: line 7, column 1
+17:42:10.10 (10989936)|CUMULATIVE_LIMIT_USAGE
+17:42:10.10 (10989936)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:42:10.10 (10989936)|CUMULATIVE_LIMIT_USAGE_END
+
+17:42:10.0 (11020311)|CODE_UNIT_FINISHED|TestExpenseUpdateOrDelete.testDeleteExpense
+17:42:10.0 (11757709)|EXECUTION_FINISHED

@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>ExpenseController</members>
-        <members>showExpensesListForContactController</members>
+        <members>*</members>
         <name>ApexClass</name>
     </types>
     <types>
+        <members>ListOfEmployees</members>
         <members>showExpensesListForContact</members>
         <name>ApexPage</name>
     </types>
     <types>
-        <members>Expense__c.Approve_Expense</members>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Expense__c.ApprovedExpense</members>
         <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>Expense__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Expense__c</members>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>*</members>
