@@ -1,0 +1,96 @@
+<apex:page standardStylesheets="false" sidebar="false" showHeader="true" controller="ExpenseController" extensions="SaveAsPdfExtension" renderAs="{!renderingService }">
+
+    
+    
+    
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+ 
+    </head>
+	<apex:form styleClass="mainForm">
+    	<apex:pageBlock title="Expense List" id="expense_list">
+            
+            	<div class="dropdown">
+  					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Type
+  					<span class="caret"></span></button>
+  					<ul class="dropdown-menu">
+    					<li><apex:commandLink action="{! showAllExpenses }"
+            					reRender="expense_list"> All Expenses
+        					</apex:commandLink>
+                        </li>
+    					<li><apex:commandLink action="{! showBusinessTrips }"
+            		reRender="expense_list">Business Trips Expenses
+        		</apex:commandLink></li>
+   					 	<li><apex:commandLink action="{! showClientMeetings }"
+            		reRender="expense_list">Client Meetings Expenses
+        		</apex:commandLink></li>
+                        <li><apex:commandLink action="{! showSubmitted }"
+            		reRender="expense_list">Submitted
+        		</apex:commandLink></li>
+                        <li><apex:commandLink action="{! showNotSubmitted }"
+            		reRender="expense_list">Not Submitted
+        		</apex:commandLink></li>
+  					</ul>
+				</div>
+            
+            	<br/>
+
+
+	       <!-- Expenses List -->
+
+            <table class="table table-bordered table-striped table-hover mainTable">
+                <thead>
+      				<tr>
+        				<th>Employee's Name</th>
+        				<th>Category</th>
+        				<th>Record Type</th>
+                        <th>Amount</th>
+                        <th>Tax</th>
+                        <th>Client Company</th>
+                        <th>Submitted</th>
+                        <th>Select</th>
+      				</tr>
+    			</thead>
+                
+    			<tbody >
+                    <apex:repeat value="{!expenses}" var="ex">
+      				<tr>
+        				<td><apex:outputLink value="{!URLFOR($Action.Contact.View, ex.expense.Employee__r.id)}">
+                            {!ex.expense.Employee__r.Name }
+                            </apex:outputLink></td>
+        				<td>{!ex.expense.Category__c }</td>
+        				<td>{!ex.expense.RecordType.Name }</td>
+                        <td>{!ex.expense.Amount__c }</td>
+                        <td>{!ex.expense.Tax__c }</td>
+                        <td>{!ex.expense.Client_Company__c}</td>
+                        <td>{!ex.expense.Submitted__c }</td>
+                        <td><apex:inputCheckbox value="{!ex.checked}"/></td>
+      				</tr>
+                        </apex:repeat>
+    			</tbody>
+                
+  			</table>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Previous" action="{!Previous}" rerender="expense_list"
+                                    status="status" disabled="{!DisablePrevious}" />
+                <apex:commandButton value="Next" action="{!Next}" reRender="expense_list"
+                                    status="status" disabled="{!DisableNext}" />
+                <apex:actionStatus id="status" startText="Please Wait..."/>
+            </apex:pageBlockButtons>
+            
+            
+           
+                
+            
+
+   		</apex:pageBlock>
+        
+        <apex:commandButton value="Submit selected Expenses" action="{!updateSelectedExpenses}" />
+            <apex:commandButton value="Create PDF File" action="{!saveToPdf}" />    
+      </apex:form>
+    
+</apex:page>

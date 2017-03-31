@@ -1,0 +1,65 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+18:00:45.0 (360039)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+18:00:45.0 (399838)|EXECUTION_STARTED
+18:00:45.0 (404068)|CODE_UNIT_STARTED|[EXTERNAL]|01p46000002xICK|TestExpenseUpdateOrDelete.testDeleteExpense
+18:00:45.0 (687910)|HEAP_ALLOCATE|[72]|Bytes:3
+18:00:45.0 (744847)|HEAP_ALLOCATE|[77]|Bytes:152
+18:00:45.0 (765723)|HEAP_ALLOCATE|[342]|Bytes:408
+18:00:45.0 (785884)|HEAP_ALLOCATE|[355]|Bytes:408
+18:00:45.0 (805617)|HEAP_ALLOCATE|[467]|Bytes:48
+18:00:45.0 (850416)|HEAP_ALLOCATE|[139]|Bytes:6
+18:00:45.0 (873764)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:23
+18:00:45.0 (890975)|METHOD_ENTRY|[2]|01p46000002xICK|TestExpenseUpdateOrDelete.TestExpenseUpdateOrDelete()
+18:00:45.0 (898312)|STATEMENT_EXECUTE|[2]
+18:00:45.0 (906785)|STATEMENT_EXECUTE|[2]
+18:00:45.0 (911768)|METHOD_EXIT|[2]|TestExpenseUpdateOrDelete
+18:00:45.0 (967116)|HEAP_ALLOCATE|[50]|Bytes:5
+18:00:45.0 (995996)|HEAP_ALLOCATE|[56]|Bytes:5
+18:00:45.0 (1005627)|HEAP_ALLOCATE|[64]|Bytes:7
+18:00:45.0 (1064745)|STATEMENT_EXECUTE|[4]
+18:00:45.0 (1067631)|STATEMENT_EXECUTE|[6]
+18:00:45.0 (1135012)|HEAP_ALLOCATE|[6]|Bytes:4
+18:00:45.0 (1253453)|HEAP_ALLOCATE|[6]|Bytes:8
+18:00:45.0 (1330850)|VARIABLE_ASSIGNMENT|[6]|this.Name|"Test3333"|0x74420e2e
+18:00:45.0 (1337108)|HEAP_ALLOCATE|[6]|Bytes:7
+18:00:45.0 (1377607)|VARIABLE_ASSIGNMENT|[6]|this.Category__c|"De joda"|0x74420e2e
+18:00:45.0 (1421257)|HEAP_ALLOCATE|[6]|Bytes:28
+18:00:45.0 (1467516)|VARIABLE_ASSIGNMENT|[6]|this.Amount__c|3400|0x74420e2e
+18:00:45.0 (1474511)|HEAP_ALLOCATE|[7]|Bytes:4
+18:00:45.0 (1521081)|VARIABLE_ASSIGNMENT|[6]|this.Client_Company__c|"hola"|0x74420e2e
+18:00:45.0 (1547348)|VARIABLE_ASSIGNMENT|[6]|this.Submitted__c|true|0x74420e2e
+18:00:45.0 (1577875)|VARIABLE_SCOPE_BEGIN|[6]|expense|Expense__c|true|false
+18:00:45.0 (1598182)|VARIABLE_ASSIGNMENT|[6]|expense|{"Name":"Test3333","Category__c":"De joda","Amount__c":3400,"Client_Company__c":"hola","Submitted__c":true}|0x74420e2e
+18:00:45.0 (1603513)|STATEMENT_EXECUTE|[9]
+18:00:45.0 (1631757)|HEAP_ALLOCATE|[9]|Bytes:8
+18:00:45.0 (1638164)|DML_BEGIN|[9]|Op:Insert|Type:Expense__c|Rows:1
+18:00:45.0 (1664710)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+18:00:45.0 (5659822)|DML_END|[9]
+18:00:45.0 (5783933)|VF_PAGE_MESSAGE|Category: bad value for restricted picklist field: De joda
+18:00:45.0 (5863783)|EXCEPTION_THROWN|[9]|System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, Category: bad value for restricted picklist field: De joda: [Category__c]
+18:00:45.0 (6366946)|HEAP_ALLOCATE|[9]|Bytes:172
+18:00:45.0 (6558710)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, Category: bad value for restricted picklist field: De joda: [Category__c]
+
+Class.TestExpenseUpdateOrDelete.testDeleteExpense: line 9, column 1
+18:00:45.0 (6570449)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, Category: bad value for restricted picklist field: De joda: [Category__c]
+
+Class.TestExpenseUpdateOrDelete.testDeleteExpense: line 9, column 1
+18:00:45.6 (6587592)|CUMULATIVE_LIMIT_USAGE
+18:00:45.6 (6587592)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+18:00:45.6 (6587592)|CUMULATIVE_LIMIT_USAGE_END
+
+18:00:45.0 (6630760)|CODE_UNIT_FINISHED|TestExpenseUpdateOrDelete.testDeleteExpense
+18:00:45.0 (7507032)|EXECUTION_FINISHED

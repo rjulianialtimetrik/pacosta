@@ -1,27 +1,44 @@
-<apex:page controller="showExpensesListForContactController" standardStylesheets="false">
+<apex:page controller="showExpensesListForContactController" sidebar="false" showHeader="true" standardStylesheets="false">
+    
+    
+    
+    <script type="text/javascript">
+
+    	document.body.style.fontSize == 14px;
+    
+    </script>
+
+    
     
     <head>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
+    
+    <apex:form >
     	<apex:pageBlock title="Expense List" id="expense_list">
-            <apex:form >
-            	<apex:commandLink action="{! showBusinessTrips }"
+          
+                
+                <div class="dropdown">
+  					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Type
+  					<span class="caret"></span></button>
+  					<ul class="dropdown-menu">
+    					<li><apex:commandLink action="{! showAllExpenses }"
+            		reRender="expense_list"> All Expenses
+        		</apex:commandLink></li>
+    					<li><apex:commandLink action="{! showBusinessTrips }"
             		reRender="expense_list">Business Trips Expenses
-        		</apex:commandLink>
-            	<br/>
-            	<apex:commandLink action="{! showClientMeetings }"
+        		</apex:commandLink></li>
+   					 	<li><apex:commandLink action="{! showClientMeetings }"
             		reRender="expense_list">Client Meetings Expenses
-        		</apex:commandLink>
-            
+        		</apex:commandLink></li>
+  					</ul>
+				</div>
+            	
             	<br/>
 
-                <apex:commandLink action="{! showAllExpenses }"
-            		reRender="expense_list"> All Expenses
-        		</apex:commandLink>
-                
-            </apex:form>
+
             <br/>
 
 	       <!-- Expenses List -->
@@ -62,7 +79,17 @@ onmouseover="LookupHoverDetail.getHover('lookup{!ex.id}opp4', '/{!ex.id}/m?retUR
     			</tbody>
                 
   			</table>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Previous" action="{!Previous}" rerender="expense_list"
+                                    status="status" disabled="{!DisablePrevious}" />
+                <apex:commandButton value="Next" action="{!Next}" reRender="expense_list"
+                                    status="status" disabled="{!DisableNext}" />
+                <apex:actionStatus id="status" startText="Please Wait..."/>
+            </apex:pageBlockButtons>
 
    		</apex:pageBlock>
+        
+        </apex:form>
     
 </apex:page>

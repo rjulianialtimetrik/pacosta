@@ -1,0 +1,343 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+14:05:41.0 (51295)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+14:05:41.0 (77670)|EXECUTION_STARTED
+14:05:41.0 (81714)|CODE_UNIT_STARTED|[EXTERNAL]|06646000001BW08|VF: /apex/ListOfEmployees
+14:05:41.0 (187952)|VF_DESERIALIZE_VIEWSTATE_BEGIN|06646000001BW08
+14:05:41.0 (4700716)|HEAP_ALLOCATE|[72]|Bytes:3
+14:05:41.0 (4739418)|HEAP_ALLOCATE|[77]|Bytes:152
+14:05:41.0 (4753393)|HEAP_ALLOCATE|[342]|Bytes:408
+14:05:41.0 (4767504)|HEAP_ALLOCATE|[355]|Bytes:408
+14:05:41.0 (4780352)|HEAP_ALLOCATE|[467]|Bytes:48
+14:05:41.0 (4806116)|HEAP_ALLOCATE|[139]|Bytes:6
+14:05:41.0 (6357297)|HEAP_ALLOCATE|[50]|Bytes:5
+14:05:41.0 (6383623)|HEAP_ALLOCATE|[56]|Bytes:5
+14:05:41.0 (6391134)|HEAP_ALLOCATE|[64]|Bytes:7
+14:05:41.0 (7928985)|VF_DESERIALIZE_VIEWSTATE_END
+14:05:41.0 (8632733)|SYSTEM_MODE_ENTER|true
+14:05:41.0 (8855422)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:140
+14:05:41.0 (8863715)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:46
+14:05:41.0 (8871631)|METHOD_ENTRY|[1]|01p46000002wayn|ExpenseController.ExpenseController()
+14:05:41.0 (8875409)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (8880788)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (8885873)|METHOD_EXIT|[1]|ExpenseController
+14:05:41.0 (8890633)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+14:05:41.0 (8896125)|VARIABLE_SCOPE_BEGIN|[17]|this|ExpenseController|true|false
+14:05:41.0 (8953605)|VARIABLE_ASSIGNMENT|[17]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x35204821"}|0x1a19569
+14:05:41.0 (8963039)|STATEMENT_EXECUTE|[17]
+14:05:41.0 (8964961)|STATEMENT_EXECUTE|[19]
+14:05:41.0 (8967947)|HEAP_ALLOCATE|[19]|Bytes:161
+14:05:41.0 (8973179)|HEAP_ALLOCATE|[22]|Bytes:33
+14:05:41.0 (9028707)|HEAP_ALLOCATE|[22]|Bytes:1
+14:05:41.0 (9039613)|HEAP_ALLOCATE|[22]|Bytes:8
+14:05:41.0 (9047508)|HEAP_ALLOCATE|[22]|Bytes:1
+14:05:41.0 (9059228)|HEAP_ALLOCATE|[19]|Bytes:230
+14:05:41.0 (9902796)|SOQL_EXECUTE_BEGIN|[19]|Aggregations:0|SELECT Category__c, RecordType.Name, Amount__c, Tax__c, Client_Company__c, Submitted__c, Employee__r.Id, Employee__r.Name, Employee__r.Birthdate FROM Expense__c  WHERE Submitted__c = true ORDER BY Employee__r.Name LIMIT 3 OFFSET 0
+14:05:41.0 (19289869)|SOQL_EXECUTE_END|[19]|Rows:3
+14:05:41.0 (19306854)|HEAP_ALLOCATE|[19]|Bytes:16
+14:05:41.0 (19339156)|HEAP_ALLOCATE|[19]|Bytes:895
+14:05:41.0 (19406853)|HEAP_ALLOCATE|[19]|Bytes:16
+14:05:41.0 (19426355)|VARIABLE_SCOPE_BEGIN|[19]|results|List<Expense__c>|true|false
+14:05:41.0 (19493788)|VARIABLE_ASSIGNMENT|[19]|results|[{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":3500,"Tax__c":455.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FBblEAG","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}},{"RecordTypeId":"012460000005G1FAAU","Amount__c":3000,"Tax__c":390.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp6rEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}},{"Category__c":"Event Registration","RecordTypeId":"012460000005G1FAAU","Amount__c":3499,"Tax__c":454.87,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp76EAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}]|0x706f0480
+14:05:41.0 (19502110)|STATEMENT_EXECUTE|[25]
+14:05:41.0 (19509173)|HEAP_ALLOCATE|[25]|Bytes:4
+14:05:41.0 (19608998)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x35204821"}|0x1a19569
+14:05:41.0 (19627223)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:05:41.0 (19633508)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|[]|0x3728073
+14:05:41.0 (19644242)|VARIABLE_ASSIGNMENT|[14]|this.wrappedExpenses|[]|0x1a19569
+14:05:41.0 (19813005)|HEAP_ALLOCATE|[26]|Bytes:5
+14:05:41.0 (19857314)|HEAP_ALLOCATE|[26]|Bytes:40
+14:05:41.0 (19866854)|VARIABLE_SCOPE_BEGIN|[26]|ex|Expense__c|true|false
+14:05:41.0 (19889544)|VARIABLE_ASSIGNMENT|[26]|ex|{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":3500,"Tax__c":455.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FBblEAG","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x3d48615d
+14:05:41.0 (19894235)|STATEMENT_EXECUTE|[26]
+14:05:41.0 (19895695)|STATEMENT_EXECUTE|[28]
+14:05:41.0 (19934018)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (19946586)|HEAP_ALLOCATE|[28]|Bytes:112
+14:05:41.0 (19952140)|HEAP_ALLOCATE|[28]|Bytes:5
+14:05:41.0 (19971917)|METHOD_ENTRY|[1]|01p46000003buu6|ExpenseWrapper.ExpenseWrapper()
+14:05:41.0 (19974984)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (19978149)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (19982434)|METHOD_EXIT|[1]|ExpenseWrapper
+14:05:41.0 (19988743)|HEAP_ALLOCATE|[28]|Bytes:12
+14:05:41.0 (20001674)|CONSTRUCTOR_ENTRY|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (20006950)|VARIABLE_SCOPE_BEGIN|[6]|this|ExpenseWrapper|true|false
+14:05:41.0 (20018873)|VARIABLE_ASSIGNMENT|[6]|this|{}|0x72e517e3
+14:05:41.0 (20021014)|VARIABLE_SCOPE_BEGIN|[6]|ex|Expense__c|true|false
+14:05:41.0 (20037371)|VARIABLE_ASSIGNMENT|[6]|ex|{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":3500,"Tax__c":455.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FBblEAG","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x3d48615d
+14:05:41.0 (20043025)|VARIABLE_SCOPE_BEGIN|[6]|check|Boolean|false|false
+14:05:41.0 (20046093)|VARIABLE_ASSIGNMENT|[6]|check|false
+14:05:41.0 (20048767)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (20050254)|STATEMENT_EXECUTE|[3]
+14:05:41.0 (20051509)|STATEMENT_EXECUTE|[4]
+14:05:41.0 (20057417)|HEAP_ALLOCATE|[8]|Bytes:6
+14:05:41.0 (20075901)|STATEMENT_EXECUTE|[6]
+14:05:41.0 (20077589)|STATEMENT_EXECUTE|[8]
+14:05:41.0 (20101319)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x72e517e3
+14:05:41.0 (20116850)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":3500,"Tax__c":455.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FBblEAG","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x3d48615d
+14:05:41.0 (20132937)|VARIABLE_ASSIGNMENT|[3]|this.expense|{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":3500,"Tax__c":455.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FBblEAG","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x72e517e3
+14:05:41.0 (20139658)|STATEMENT_EXECUTE|[9]
+14:05:41.0 (20159181)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"expense":"0x3d48615d"}|0x72e517e3
+14:05:41.0 (20164902)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+14:05:41.0 (20168350)|HEAP_ALLOCATE|[4]|Bytes:5
+14:05:41.0 (20172262)|VARIABLE_ASSIGNMENT|[4]|this.checked|false|0x72e517e3
+14:05:41.0 (20180406)|CONSTRUCTOR_EXIT|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (20191132)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:05:41.0 (20201283)|HEAP_ALLOCATE|[26]|Bytes:5
+14:05:41.0 (20221959)|HEAP_ALLOCATE|[26]|Bytes:36
+14:05:41.0 (20227636)|VARIABLE_SCOPE_BEGIN|[26]|ex|Expense__c|true|false
+14:05:41.0 (20244082)|VARIABLE_ASSIGNMENT|[26]|ex|{"RecordTypeId":"012460000005G1FAAU","Amount__c":3000,"Tax__c":390.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp6rEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x2c56ad83
+14:05:41.0 (20248016)|STATEMENT_EXECUTE|[26]
+14:05:41.0 (20249300)|STATEMENT_EXECUTE|[28]
+14:05:41.0 (20270448)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (20278921)|HEAP_ALLOCATE|[28]|Bytes:12
+14:05:41.0 (20285891)|CONSTRUCTOR_ENTRY|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (20288928)|VARIABLE_SCOPE_BEGIN|[6]|this|ExpenseWrapper|true|false
+14:05:41.0 (20296545)|VARIABLE_ASSIGNMENT|[6]|this|{}|0x2936d6e5
+14:05:41.0 (20298093)|VARIABLE_SCOPE_BEGIN|[6]|ex|Expense__c|true|false
+14:05:41.0 (20310947)|VARIABLE_ASSIGNMENT|[6]|ex|{"RecordTypeId":"012460000005G1FAAU","Amount__c":3000,"Tax__c":390.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp6rEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x2c56ad83
+14:05:41.0 (20315397)|VARIABLE_SCOPE_BEGIN|[6]|check|Boolean|false|false
+14:05:41.0 (20317917)|VARIABLE_ASSIGNMENT|[6]|check|false
+14:05:41.0 (20320369)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (20321510)|STATEMENT_EXECUTE|[3]
+14:05:41.0 (20322622)|STATEMENT_EXECUTE|[4]
+14:05:41.0 (20331224)|STATEMENT_EXECUTE|[6]
+14:05:41.0 (20332321)|STATEMENT_EXECUTE|[8]
+14:05:41.0 (20341575)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x2936d6e5
+14:05:41.0 (20353777)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"RecordTypeId":"012460000005G1FAAU","Amount__c":3000,"Tax__c":390.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp6rEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x2c56ad83
+14:05:41.0 (20366821)|VARIABLE_ASSIGNMENT|[3]|this.expense|{"RecordTypeId":"012460000005G1FAAU","Amount__c":3000,"Tax__c":390.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp6rEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x2936d6e5
+14:05:41.0 (20372031)|STATEMENT_EXECUTE|[9]
+14:05:41.0 (20381575)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"expense":"0x2c56ad83"}|0x2936d6e5
+14:05:41.0 (20385543)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+14:05:41.0 (20388341)|HEAP_ALLOCATE|[4]|Bytes:5
+14:05:41.0 (20391969)|VARIABLE_ASSIGNMENT|[4]|this.checked|false|0x2936d6e5
+14:05:41.0 (20398554)|CONSTRUCTOR_EXIT|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (20404190)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:05:41.0 (20412252)|HEAP_ALLOCATE|[26]|Bytes:5
+14:05:41.0 (20429255)|HEAP_ALLOCATE|[26]|Bytes:40
+14:05:41.0 (20434114)|VARIABLE_SCOPE_BEGIN|[26]|ex|Expense__c|true|false
+14:05:41.0 (20450203)|VARIABLE_ASSIGNMENT|[26]|ex|{"Category__c":"Event Registration","RecordTypeId":"012460000005G1FAAU","Amount__c":3499,"Tax__c":454.87,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp76EAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x4a444e51
+14:05:41.0 (20453960)|STATEMENT_EXECUTE|[26]
+14:05:41.0 (20455335)|STATEMENT_EXECUTE|[28]
+14:05:41.0 (20474605)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (20482180)|HEAP_ALLOCATE|[28]|Bytes:12
+14:05:41.0 (20488597)|CONSTRUCTOR_ENTRY|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (20491541)|VARIABLE_SCOPE_BEGIN|[6]|this|ExpenseWrapper|true|false
+14:05:41.0 (20498741)|VARIABLE_ASSIGNMENT|[6]|this|{}|0x6161932f
+14:05:41.0 (20500235)|VARIABLE_SCOPE_BEGIN|[6]|ex|Expense__c|true|false
+14:05:41.0 (20512804)|VARIABLE_ASSIGNMENT|[6]|ex|{"Category__c":"Event Registration","RecordTypeId":"012460000005G1FAAU","Amount__c":3499,"Tax__c":454.87,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp76EAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x4a444e51
+14:05:41.0 (20517300)|VARIABLE_SCOPE_BEGIN|[6]|check|Boolean|false|false
+14:05:41.0 (20519585)|VARIABLE_ASSIGNMENT|[6]|check|false
+14:05:41.0 (20521572)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (20522758)|STATEMENT_EXECUTE|[3]
+14:05:41.0 (20523869)|STATEMENT_EXECUTE|[4]
+14:05:41.0 (20531407)|STATEMENT_EXECUTE|[6]
+14:05:41.0 (20532510)|STATEMENT_EXECUTE|[8]
+14:05:41.0 (20541288)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x6161932f
+14:05:41.0 (20553770)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Category__c":"Event Registration","RecordTypeId":"012460000005G1FAAU","Amount__c":3499,"Tax__c":454.87,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp76EAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x4a444e51
+14:05:41.0 (20566950)|VARIABLE_ASSIGNMENT|[3]|this.expense|{"Category__c":"Event Registration","RecordTypeId":"012460000005G1FAAU","Amount__c":3499,"Tax__c":454.87,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000Fp76EAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x6161932f
+14:05:41.0 (20572170)|STATEMENT_EXECUTE|[9]
+14:05:41.0 (20581414)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"expense":"0x4a444e51"}|0x6161932f
+14:05:41.0 (20585081)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+14:05:41.0 (20587548)|HEAP_ALLOCATE|[4]|Bytes:5
+14:05:41.0 (20591183)|VARIABLE_ASSIGNMENT|[4]|this.checked|false|0x6161932f
+14:05:41.0 (20597395)|CONSTRUCTOR_EXIT|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (20602567)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:05:41.0 (20609994)|HEAP_ALLOCATE|[26]|Bytes:5
+14:05:41.0 (20617719)|VARIABLE_ASSIGNMENT|[26]|ex|null|
+14:05:41.0 (20620653)|STATEMENT_EXECUTE|[32]
+14:05:41.0 (20646893)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (21189292)|SYSTEM_MODE_ENTER|true
+14:05:41.0 (21218162)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+14:05:41.0 (21224055)|VARIABLE_SCOPE_BEGIN|[107]|this|ExpenseController|true|false
+14:05:41.0 (21247501)|VARIABLE_ASSIGNMENT|[107]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (21255232)|STATEMENT_EXECUTE|[107]
+14:05:41.0 (21260884)|STATEMENT_EXECUTE|[111]
+14:05:41.0 (21266792)|HEAP_ALLOCATE|[111]|Bytes:5
+14:05:41.0 (21333377)|SYSTEM_MODE_ENTER|true
+14:05:41.0 (21352264)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+14:05:41.0 (21356708)|VARIABLE_SCOPE_BEGIN|[114]|this|ExpenseController|true|false
+14:05:41.0 (21376133)|VARIABLE_ASSIGNMENT|[114]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (21381774)|STATEMENT_EXECUTE|[114]
+14:05:41.0 (21413661)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (21421961)|STATEMENT_EXECUTE|[115]
+14:05:41.0 (21423391)|STATEMENT_EXECUTE|[116]
+14:05:41.0 (21427570)|HEAP_ALLOCATE|[116]|Bytes:5
+14:05:41.0 (21730177)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+14:05:41.0 (21733930)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+14:05:41.0 (21740716)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.checked|false|0x72e517e3
+14:05:41.0 (21779054)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+14:05:41.0 (21781429)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+14:05:41.0 (21786548)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.checked|false|0x2936d6e5
+14:05:41.0 (21818029)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+14:05:41.0 (21820347)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+14:05:41.0 (21824430)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.checked|false|0x6161932f
+14:05:41.0 (21960570)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+14:05:41.0 (21966933)|VARIABLE_SCOPE_BEGIN|[121]|this|ExpenseController|true|false
+14:05:41.0 (21990890)|VARIABLE_ASSIGNMENT|[121]|this|{"CountTotalRecords":7,"OffsetSize":0,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (21999001)|STATEMENT_EXECUTE|[121]
+14:05:41.0 (22000734)|STATEMENT_EXECUTE|[122]
+14:05:41.0 (22008467)|HEAP_ALLOCATE|[122]|Bytes:4
+14:05:41.0 (22014813)|VARIABLE_ASSIGNMENT|[122]|this.OffsetSize|3|0x1a19569
+14:05:41.0 (22016855)|STATEMENT_EXECUTE|[123]
+14:05:41.0 (25781847)|SYSTEM_MODE_ENTER|true
+14:05:41.0 (25802196)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:96
+14:05:41.0 (25808482)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+14:05:41.0 (25815146)|METHOD_ENTRY|[1]|01p46000002ySm2|SaveAsPdfExtension.SaveAsPdfExtension()
+14:05:41.0 (25817880)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (25821395)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (25825160)|METHOD_EXIT|[1]|SaveAsPdfExtension
+14:05:41.0 (26003944)|SYSTEM_MODE_ENTER|true
+14:05:41.0 (26027424)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+14:05:41.0 (26032393)|VARIABLE_SCOPE_BEGIN|[17]|this|ExpenseController|true|false
+14:05:41.0 (26058413)|VARIABLE_ASSIGNMENT|[17]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (26065167)|STATEMENT_EXECUTE|[17]
+14:05:41.0 (26066704)|STATEMENT_EXECUTE|[19]
+14:05:41.0 (26090171)|HEAP_ALLOCATE|[22]|Bytes:1
+14:05:41.0 (26103396)|HEAP_ALLOCATE|[22]|Bytes:1
+14:05:41.0 (26112608)|HEAP_ALLOCATE|[19]|Bytes:230
+14:05:41.0 (26558093)|SOQL_EXECUTE_BEGIN|[19]|Aggregations:0|SELECT Category__c, RecordType.Name, Amount__c, Tax__c, Client_Company__c, Submitted__c, Employee__r.Id, Employee__r.Name, Employee__r.Birthdate FROM Expense__c  WHERE Submitted__c = true ORDER BY Employee__r.Name LIMIT 3 OFFSET 3
+14:05:41.0 (40295436)|SOQL_EXECUTE_END|[19]|Rows:3
+14:05:41.0 (40313678)|HEAP_ALLOCATE|[19]|Bytes:16
+14:05:41.0 (40350923)|HEAP_ALLOCATE|[19]|Bytes:1032
+14:05:41.0 (40372415)|HEAP_ALLOCATE|[19]|Bytes:16
+14:05:41.0 (40391525)|VARIABLE_SCOPE_BEGIN|[19]|results|List<Expense__c>|true|false
+14:05:41.0 (40449285)|VARIABLE_ASSIGNMENT|[19]|results|[{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":4000,"Tax__c":520.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FtpwEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}},{"Category__c":"Road Meals","RecordTypeId":"012460000005G1KAAU","Amount__c":8900,"Tax__c":1157.00,"Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000FmUwEAK","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}},{"Category__c":"Lodging","RecordTypeId":"012460000005G1KAAU","Amount__c":4000,"Tax__c":520.00,"Client_Company__c":"At&t","Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000Ftq1EAC","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}]|0x2965909
+14:05:41.0 (40456574)|STATEMENT_EXECUTE|[25]
+14:05:41.0 (40462823)|HEAP_ALLOCATE|[25]|Bytes:4
+14:05:41.0 (40512555)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x3728073"}|0x1a19569
+14:05:41.0 (40524080)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:05:41.0 (40530001)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|[]|0x1c37ee4d
+14:05:41.0 (40538581)|VARIABLE_ASSIGNMENT|[14]|this.wrappedExpenses|[]|0x1a19569
+14:05:41.0 (40566279)|HEAP_ALLOCATE|[26]|Bytes:5
+14:05:41.0 (40593029)|HEAP_ALLOCATE|[26]|Bytes:40
+14:05:41.0 (40601755)|VARIABLE_SCOPE_BEGIN|[26]|ex|Expense__c|true|false
+14:05:41.0 (40622997)|VARIABLE_ASSIGNMENT|[26]|ex|{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":4000,"Tax__c":520.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FtpwEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x5e84344d
+14:05:41.0 (40627139)|STATEMENT_EXECUTE|[26]
+14:05:41.0 (40628655)|STATEMENT_EXECUTE|[28]
+14:05:41.0 (40650542)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x1c37ee4d"}|0x1a19569
+14:05:41.0 (40660862)|HEAP_ALLOCATE|[28]|Bytes:12
+14:05:41.0 (40672095)|CONSTRUCTOR_ENTRY|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (40676594)|VARIABLE_SCOPE_BEGIN|[6]|this|ExpenseWrapper|true|false
+14:05:41.0 (40686987)|VARIABLE_ASSIGNMENT|[6]|this|{}|0x48693186
+14:05:41.0 (40689105)|VARIABLE_SCOPE_BEGIN|[6]|ex|Expense__c|true|false
+14:05:41.0 (40704308)|VARIABLE_ASSIGNMENT|[6]|ex|{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":4000,"Tax__c":520.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FtpwEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x5e84344d
+14:05:41.0 (40710266)|VARIABLE_SCOPE_BEGIN|[6]|check|Boolean|false|false
+14:05:41.0 (40713044)|VARIABLE_ASSIGNMENT|[6]|check|false
+14:05:41.0 (40715654)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (40717193)|STATEMENT_EXECUTE|[3]
+14:05:41.0 (40718414)|STATEMENT_EXECUTE|[4]
+14:05:41.0 (40731078)|STATEMENT_EXECUTE|[6]
+14:05:41.0 (40732296)|STATEMENT_EXECUTE|[8]
+14:05:41.0 (40742883)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x48693186
+14:05:41.0 (40756922)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":4000,"Tax__c":520.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FtpwEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x5e84344d
+14:05:41.0 (40772007)|VARIABLE_ASSIGNMENT|[3]|this.expense|{"Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":4000,"Tax__c":520.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","Id":"a0F46000000FtpwEAC","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"},"Employee__r":{"Id":"00346000002ojVWAAY","Name":"Carol Ruiz","Birthdate":"2017-10-09T00:00:00.000Z"}}|0x48693186
+14:05:41.0 (40777551)|STATEMENT_EXECUTE|[9]
+14:05:41.0 (40788307)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"expense":"0x5e84344d"}|0x48693186
+14:05:41.0 (40792700)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+14:05:41.0 (40796160)|HEAP_ALLOCATE|[4]|Bytes:5
+14:05:41.0 (40801438)|VARIABLE_ASSIGNMENT|[4]|this.checked|false|0x48693186
+14:05:41.0 (40809910)|CONSTRUCTOR_EXIT|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (40818478)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:05:41.0 (40827904)|HEAP_ALLOCATE|[26]|Bytes:5
+14:05:41.0 (40846070)|HEAP_ALLOCATE|[26]|Bytes:40
+14:05:41.0 (40856018)|VARIABLE_SCOPE_BEGIN|[26]|ex|Expense__c|true|false
+14:05:41.0 (40869784)|VARIABLE_ASSIGNMENT|[26]|ex|{"Category__c":"Road Meals","RecordTypeId":"012460000005G1KAAU","Amount__c":8900,"Tax__c":1157.00,"Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000FmUwEAK","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}|0x3d2ca0ea
+14:05:41.0 (40873140)|STATEMENT_EXECUTE|[26]
+14:05:41.0 (40874384)|STATEMENT_EXECUTE|[28]
+14:05:41.0 (40893872)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x1c37ee4d"}|0x1a19569
+14:05:41.0 (40901733)|HEAP_ALLOCATE|[28]|Bytes:12
+14:05:41.0 (40908178)|CONSTRUCTOR_ENTRY|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (40911000)|VARIABLE_SCOPE_BEGIN|[6]|this|ExpenseWrapper|true|false
+14:05:41.0 (40918699)|VARIABLE_ASSIGNMENT|[6]|this|{}|0x6c7d6ee3
+14:05:41.0 (40920283)|VARIABLE_SCOPE_BEGIN|[6]|ex|Expense__c|true|false
+14:05:41.0 (40930494)|VARIABLE_ASSIGNMENT|[6]|ex|{"Category__c":"Road Meals","RecordTypeId":"012460000005G1KAAU","Amount__c":8900,"Tax__c":1157.00,"Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000FmUwEAK","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}|0x3d2ca0ea
+14:05:41.0 (40934627)|VARIABLE_SCOPE_BEGIN|[6]|check|Boolean|false|false
+14:05:41.0 (40937003)|VARIABLE_ASSIGNMENT|[6]|check|false
+14:05:41.0 (40939131)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (40940315)|STATEMENT_EXECUTE|[3]
+14:05:41.0 (40941481)|STATEMENT_EXECUTE|[4]
+14:05:41.0 (40949016)|STATEMENT_EXECUTE|[6]
+14:05:41.0 (40950152)|STATEMENT_EXECUTE|[8]
+14:05:41.0 (40958734)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x6c7d6ee3
+14:05:41.0 (40968710)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Category__c":"Road Meals","RecordTypeId":"012460000005G1KAAU","Amount__c":8900,"Tax__c":1157.00,"Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000FmUwEAK","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}|0x3d2ca0ea
+14:05:41.0 (40980355)|VARIABLE_ASSIGNMENT|[3]|this.expense|{"Category__c":"Road Meals","RecordTypeId":"012460000005G1KAAU","Amount__c":8900,"Tax__c":1157.00,"Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000FmUwEAK","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}|0x6c7d6ee3
+14:05:41.0 (40984576)|STATEMENT_EXECUTE|[9]
+14:05:41.0 (40993088)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"expense":"0x3d2ca0ea"}|0x6c7d6ee3
+14:05:41.0 (40996801)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+14:05:41.0 (40999414)|HEAP_ALLOCATE|[4]|Bytes:5
+14:05:41.0 (41003352)|VARIABLE_ASSIGNMENT|[4]|this.checked|false|0x6c7d6ee3
+14:05:41.0 (41010337)|CONSTRUCTOR_EXIT|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (41015692)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:05:41.0 (41023354)|HEAP_ALLOCATE|[26]|Bytes:5
+14:05:41.0 (41039614)|HEAP_ALLOCATE|[26]|Bytes:44
+14:05:41.0 (41044181)|VARIABLE_SCOPE_BEGIN|[26]|ex|Expense__c|true|false
+14:05:41.0 (41057283)|VARIABLE_ASSIGNMENT|[26]|ex|{"Category__c":"Lodging","RecordTypeId":"012460000005G1KAAU","Amount__c":4000,"Tax__c":520.00,"Client_Company__c":"At&t","Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000Ftq1EAC","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}|0x2a76381d
+14:05:41.0 (41060888)|STATEMENT_EXECUTE|[26]
+14:05:41.0 (41062135)|STATEMENT_EXECUTE|[28]
+14:05:41.0 (41080158)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x1c37ee4d"}|0x1a19569
+14:05:41.0 (41087219)|HEAP_ALLOCATE|[28]|Bytes:12
+14:05:41.0 (41093166)|CONSTRUCTOR_ENTRY|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (41095773)|VARIABLE_SCOPE_BEGIN|[6]|this|ExpenseWrapper|true|false
+14:05:41.0 (41102531)|VARIABLE_ASSIGNMENT|[6]|this|{}|0x5c133c74
+14:05:41.0 (41104051)|VARIABLE_SCOPE_BEGIN|[6]|ex|Expense__c|true|false
+14:05:41.0 (41114495)|VARIABLE_ASSIGNMENT|[6]|ex|{"Category__c":"Lodging","RecordTypeId":"012460000005G1KAAU","Amount__c":4000,"Tax__c":520.00,"Client_Company__c":"At&t","Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000Ftq1EAC","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}|0x2a76381d
+14:05:41.0 (41118570)|VARIABLE_SCOPE_BEGIN|[6]|check|Boolean|false|false
+14:05:41.0 (41120884)|VARIABLE_ASSIGNMENT|[6]|check|false
+14:05:41.0 (41122846)|STATEMENT_EXECUTE|[1]
+14:05:41.0 (41124090)|STATEMENT_EXECUTE|[3]
+14:05:41.0 (41125323)|STATEMENT_EXECUTE|[4]
+14:05:41.0 (41132263)|STATEMENT_EXECUTE|[6]
+14:05:41.0 (41133392)|STATEMENT_EXECUTE|[8]
+14:05:41.0 (41141661)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x5c133c74
+14:05:41.0 (41152480)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Category__c":"Lodging","RecordTypeId":"012460000005G1KAAU","Amount__c":4000,"Tax__c":520.00,"Client_Company__c":"At&t","Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000Ftq1EAC","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}|0x2a76381d
+14:05:41.0 (41163897)|VARIABLE_ASSIGNMENT|[3]|this.expense|{"Category__c":"Lodging","RecordTypeId":"012460000005G1KAAU","Amount__c":4000,"Tax__c":520.00,"Client_Company__c":"At&t","Submitted__c":true,"Employee__c":"00346000002ojeGAAQ","Id":"a0F46000000Ftq1EAC","RecordType":{"Name":"Client Meetings","Id":"012460000005G1KAAU"},"Employee__r":{"Id":"00346000002ojeGAAQ","Name":"Paolo Smith"}}|0x5c133c74
+14:05:41.0 (41168137)|STATEMENT_EXECUTE|[9]
+14:05:41.0 (41176374)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"expense":"0x2a76381d"}|0x5c133c74
+14:05:41.0 (41180092)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+14:05:41.0 (41182717)|HEAP_ALLOCATE|[4]|Bytes:5
+14:05:41.0 (41186118)|VARIABLE_ASSIGNMENT|[4]|this.checked|false|0x5c133c74
+14:05:41.0 (41191985)|CONSTRUCTOR_EXIT|[28]|01p46000003buu6|<init>(Expense__c,Boolean)
+14:05:41.0 (41196962)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:05:41.0 (41204039)|HEAP_ALLOCATE|[26]|Bytes:5
+14:05:41.0 (41210897)|VARIABLE_ASSIGNMENT|[26]|ex|null|
+14:05:41.0 (41213717)|STATEMENT_EXECUTE|[32]
+14:05:41.0 (41230479)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x1c37ee4d"}|0x1a19569
+14:05:41.0 (42745951)|SYSTEM_MODE_ENTER|true
+14:05:41.0 (42777657)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+14:05:41.0 (42783507)|VARIABLE_SCOPE_BEGIN|[107]|this|ExpenseController|true|false
+14:05:41.0 (42808987)|VARIABLE_ASSIGNMENT|[107]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x1c37ee4d"}|0x1a19569
+14:05:41.0 (42816318)|STATEMENT_EXECUTE|[107]
+14:05:41.0 (42820818)|STATEMENT_EXECUTE|[108]
+14:05:41.0 (42822248)|STATEMENT_EXECUTE|[109]
+14:05:41.0 (42827890)|HEAP_ALLOCATE|[109]|Bytes:5
+14:05:41.0 (43218561)|SYSTEM_MODE_ENTER|true
+14:05:41.0 (43242628)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+14:05:41.0 (43247694)|VARIABLE_SCOPE_BEGIN|[114]|this|ExpenseController|true|false
+14:05:41.0 (43271923)|VARIABLE_ASSIGNMENT|[114]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x1c37ee4d"}|0x1a19569
+14:05:41.0 (43278696)|STATEMENT_EXECUTE|[114]
+14:05:41.0 (43301204)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"CountTotalRecords":7,"OffsetSize":3,"QueryLimit":3,"queryString":" WHERE Submitted__c  (6 more) ...","wrappedExpenses":"0x1c37ee4d"}|0x1a19569
+14:05:41.0 (43309710)|STATEMENT_EXECUTE|[115]
+14:05:41.0 (43311328)|STATEMENT_EXECUTE|[116]
+14:05:41.0 (43316439)|HEAP_ALLOCATE|[116]|Bytes:5
+14:05:41.0 (48507913)|VF_SERIALIZE_VIEWSTATE_BEGIN|06646000001BW08
+14:05:41.0 (59512841)|VF_SERIALIZE_VIEWSTATE_END
+14:05:41.0 (70155044)|CODE_UNIT_STARTED|[EXTERNAL]|Generate Metadata
+14:05:41.0 (71542797)|CODE_UNIT_FINISHED|Generate Metadata
+14:05:41.73 (73559957)|CUMULATIVE_LIMIT_USAGE
+14:05:41.73 (73559957)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:05:41.73 (73559957)|CUMULATIVE_LIMIT_USAGE_END
+
+14:05:41.0 (73589738)|CODE_UNIT_FINISHED|VF: /apex/ListOfEmployees
+14:05:41.0 (74347555)|EXECUTION_FINISHED

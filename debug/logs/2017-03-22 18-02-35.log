@@ -1,0 +1,70 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+18:02:15.0 (62696)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+18:02:15.0 (97759)|EXECUTION_STARTED
+18:02:15.0 (101601)|CODE_UNIT_STARTED|[EXTERNAL]|01p46000002xICK|TestExpenseUpdateOrDelete.testDeleteExpense
+18:02:15.0 (303767)|HEAP_ALLOCATE|[72]|Bytes:3
+18:02:15.0 (335814)|HEAP_ALLOCATE|[77]|Bytes:152
+18:02:15.0 (350052)|HEAP_ALLOCATE|[342]|Bytes:408
+18:02:15.0 (368855)|HEAP_ALLOCATE|[355]|Bytes:408
+18:02:15.0 (386987)|HEAP_ALLOCATE|[467]|Bytes:48
+18:02:15.0 (415398)|HEAP_ALLOCATE|[139]|Bytes:6
+18:02:15.0 (427696)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:23
+18:02:15.0 (438828)|METHOD_ENTRY|[2]|01p46000002xICK|TestExpenseUpdateOrDelete.TestExpenseUpdateOrDelete()
+18:02:15.0 (443341)|STATEMENT_EXECUTE|[2]
+18:02:15.0 (449001)|STATEMENT_EXECUTE|[2]
+18:02:15.0 (452589)|METHOD_EXIT|[2]|TestExpenseUpdateOrDelete
+18:02:15.0 (485646)|HEAP_ALLOCATE|[50]|Bytes:5
+18:02:15.0 (507561)|HEAP_ALLOCATE|[56]|Bytes:5
+18:02:15.0 (513321)|HEAP_ALLOCATE|[64]|Bytes:7
+18:02:15.0 (548314)|STATEMENT_EXECUTE|[4]
+18:02:15.0 (550077)|STATEMENT_EXECUTE|[6]
+18:02:15.0 (591163)|HEAP_ALLOCATE|[6]|Bytes:4
+18:02:15.0 (676417)|HEAP_ALLOCATE|[6]|Bytes:8
+18:02:15.0 (723400)|VARIABLE_ASSIGNMENT|[6]|this.Name|"Test3333"|0x70c21e19
+18:02:15.0 (727244)|HEAP_ALLOCATE|[6]|Bytes:19
+18:02:15.0 (750864)|VARIABLE_ASSIGNMENT|[6]|this.Category__c|"\tEvent Registration"|0x70c21e19
+18:02:15.0 (780208)|HEAP_ALLOCATE|[6]|Bytes:28
+18:02:15.0 (805267)|VARIABLE_ASSIGNMENT|[6]|this.Amount__c|3400|0x70c21e19
+18:02:15.0 (808533)|HEAP_ALLOCATE|[7]|Bytes:4
+18:02:15.0 (822852)|VARIABLE_ASSIGNMENT|[6]|this.Client_Company__c|"hola"|0x70c21e19
+18:02:15.0 (837125)|VARIABLE_ASSIGNMENT|[6]|this.Submitted__c|true|0x70c21e19
+18:02:15.0 (865743)|VARIABLE_SCOPE_BEGIN|[6]|expense|Expense__c|true|false
+18:02:15.0 (884209)|VARIABLE_ASSIGNMENT|[6]|expense|{"Name":"Test3333","Category__c":"\tEvent Registration","Amount__c":3400,"Client_Company__c":"hola","Submitted__c":true}|0x70c21e19
+18:02:15.0 (888563)|STATEMENT_EXECUTE|[9]
+18:02:15.0 (912165)|HEAP_ALLOCATE|[9]|Bytes:8
+18:02:15.0 (917347)|DML_BEGIN|[9]|Op:Insert|Type:Expense__c|Rows:1
+18:02:15.0 (941435)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+18:02:15.0 (6684912)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Expense:new
+18:02:15.0 (6695434)|VALIDATION_RULE|03d46000000DMqh|InsertOtherValue
+18:02:15.0 (6841441)|VALIDATION_FORMULA|AND (IF (ISPICKVAL( Category__c , "Other"), true, false),  ISBLANK( Other__c ) )|Category__c=Event Registration , Other__c=null
+18:02:15.0 (6845967)|VALIDATION_PASS
+18:02:15.0 (6873455)|CODE_UNIT_FINISHED|Validation:Expense:new
+18:02:15.0 (8123222)|DML_END|[9]
+18:02:15.0 (8202667)|VF_PAGE_MESSAGE|Required fields are missing: [Employee__c]
+18:02:15.0 (8293513)|EXCEPTION_THROWN|[9]|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Employee__c]: [Employee__c]
+18:02:15.0 (8572332)|HEAP_ALLOCATE|[9]|Bytes:139
+18:02:15.0 (8802630)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Employee__c]: [Employee__c]
+
+Class.TestExpenseUpdateOrDelete.testDeleteExpense: line 9, column 1
+18:02:15.0 (8811930)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Employee__c]: [Employee__c]
+
+Class.TestExpenseUpdateOrDelete.testDeleteExpense: line 9, column 1
+18:02:15.8 (8817978)|CUMULATIVE_LIMIT_USAGE
+18:02:15.8 (8817978)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+18:02:15.8 (8817978)|CUMULATIVE_LIMIT_USAGE_END
+
+18:02:15.0 (8847921)|CODE_UNIT_FINISHED|TestExpenseUpdateOrDelete.testDeleteExpense
+18:02:15.0 (9598103)|EXECUTION_FINISHED

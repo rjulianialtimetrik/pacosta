@@ -1,0 +1,71 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:19:41.0 (57959)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+17:19:41.0 (81087)|EXECUTION_STARTED
+17:19:41.0 (85062)|CODE_UNIT_STARTED|[EXTERNAL]|06646000001Bfzo|VF: /apex/showExpensesListForContact
+17:19:41.0 (1480039)|SYSTEM_MODE_ENTER|true
+17:19:41.0 (1799725)|HEAP_ALLOCATE|[72]|Bytes:3
+17:19:41.0 (1834362)|HEAP_ALLOCATE|[77]|Bytes:152
+17:19:41.0 (1846867)|HEAP_ALLOCATE|[342]|Bytes:408
+17:19:41.0 (1858919)|HEAP_ALLOCATE|[355]|Bytes:408
+17:19:41.0 (1870297)|HEAP_ALLOCATE|[467]|Bytes:48
+17:19:41.0 (1894852)|HEAP_ALLOCATE|[139]|Bytes:6
+17:19:41.0 (1905465)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+17:19:41.0 (1912352)|METHOD_ENTRY|[1]|01p46000002x5eL|showExpensesListForContactController.showExpensesListForContactController()
+17:19:41.0 (1918313)|STATEMENT_EXECUTE|[1]
+17:19:41.0 (1923407)|STATEMENT_EXECUTE|[1]
+17:19:41.0 (1927363)|METHOD_EXIT|[1]|showExpensesListForContactController
+17:19:41.0 (1941513)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:19:41.0 (1947616)|VARIABLE_SCOPE_BEGIN|[1]|this|showExpensesListForContactController|true|false
+17:19:41.0 (1985384)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x5fd0b468
+17:19:41.0 (1994935)|HEAP_ALLOCATE|[3]|Bytes:6
+17:19:41.0 (2028089)|STATEMENT_EXECUTE|[1]
+17:19:41.0 (2030091)|STATEMENT_EXECUTE|[3]
+17:19:41.0 (2041853)|VARIABLE_ASSIGNMENT|[3]|this.queryString|""|0x5fd0b468
+17:19:41.0 (2089123)|SYSTEM_MODE_ENTER|true
+17:19:41.0 (2117700)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:19:41.0 (2122658)|VARIABLE_SCOPE_BEGIN|[5]|this|showExpensesListForContactController|true|false
+17:19:41.0 (2135218)|VARIABLE_ASSIGNMENT|[5]|this|{"queryString":""}|0x5fd0b468
+17:19:41.0 (2143012)|STATEMENT_EXECUTE|[5]
+17:19:41.0 (18822689)|HEAP_DUMP|[8]|07n4600000000Na|showExpensesListForContactController|none|8
+17:19:41.0 (18829900)|STATEMENT_EXECUTE|[8]
+17:19:41.0 (18863018)|HEAP_ALLOCATE|[50]|Bytes:5
+17:19:41.0 (18889284)|HEAP_ALLOCATE|[56]|Bytes:5
+17:19:41.0 (18897862)|HEAP_ALLOCATE|[64]|Bytes:7
+17:19:41.0 (18983423)|HEAP_ALLOCATE|[8]|Bytes:53
+17:19:41.0 (19038365)|HEAP_ALLOCATE|[8]|Bytes:17
+17:19:41.0 (19053918)|HEAP_ALLOCATE|[8]|Bytes:2
+17:19:41.0 (19073174)|VARIABLE_SCOPE_BEGIN|[8]|idContact|String|false|false
+17:19:41.0 (19081667)|VARIABLE_ASSIGNMENT|[8]|idContact|"00346000002ojVW"
+17:19:41.0 (19086408)|STATEMENT_EXECUTE|[10]
+17:19:41.0 (19089014)|HEAP_ALLOCATE|[10]|Bytes:136
+17:19:41.0 (19091406)|HEAP_ALLOCATE|[12]|Bytes:1
+17:19:41.0 (19108549)|HEAP_ALLOCATE|[10]|Bytes:152
+17:19:41.0 (19799111)|SOQL_EXECUTE_BEGIN|[10]|Aggregations:0|SELECT id, Name, Category__c, RecordType.Name, Amount__c, Tax__c, Client_Company__c, Submitted__c FROM Expense__c WHERE Employee__r.Id='00346000002ojVW'
+17:19:41.0 (27704329)|SOQL_EXECUTE_END|[10]|Rows:4
+17:19:41.0 (27724706)|HEAP_ALLOCATE|[10]|Bytes:20
+17:19:41.0 (27758479)|HEAP_ALLOCATE|[10]|Bytes:1115
+17:19:41.0 (27787491)|HEAP_ALLOCATE|[10]|Bytes:20
+17:19:41.0 (27800392)|VARIABLE_SCOPE_BEGIN|[10]|results|List<Expense__c>|true|false
+17:19:41.0 (27843958)|VARIABLE_ASSIGNMENT|[10]|results|[{"Id":"a0F46000000Fp6rEAC","Name":"Test44","RecordTypeId":"012460000005G1FAAU","Amount__c":3000,"Tax__c":390.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"}},{"Id":"a0F46000000Fp76EAC","Name":"Travel to Las Vegas","Category__c":"Event Registration","RecordTypeId":"012460000005G1FAAU","Amount__c":3499,"Tax__c":454.87,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"}},{"Id":"a0F46000000FBblEAG","Name":"Test","Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":3500,"Tax__c":455.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"}},{"Id":"a0F46000000FtpwEAC","Name":"Expense nueva","Category__c":"Transportation","RecordTypeId":"012460000005G1FAAU","Amount__c":4000,"Tax__c":520.00,"Submitted__c":true,"Employee__c":"00346000002ojVWAAY","RecordType":{"Name":"Business Trips","Id":"012460000005G1FAAU"}}]|0x37180a60
+17:19:41.0 (27853726)|STATEMENT_EXECUTE|[15]
+17:19:41.0 (36847049)|VF_SERIALIZE_VIEWSTATE_BEGIN|06646000001Bfzo
+17:19:41.0 (38933265)|VF_SERIALIZE_VIEWSTATE_END
+17:19:41.40 (40802634)|CUMULATIVE_LIMIT_USAGE
+17:19:41.40 (40802634)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:19:41.40 (40802634)|CUMULATIVE_LIMIT_USAGE_END
+
+17:19:41.0 (40832158)|CODE_UNIT_FINISHED|VF: /apex/showExpensesListForContact
+17:19:41.0 (41556176)|EXECUTION_FINISHED

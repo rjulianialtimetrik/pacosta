@@ -1,0 +1,53 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:48:24.0 (307310)|USER_INFO|[EXTERNAL]|00546000000Iihs|pacosta@altimetrik.com|Argentine Time|GMT-03:00
+17:48:24.0 (335032)|EXECUTION_STARTED
+17:48:24.0 (338919)|CODE_UNIT_STARTED|[EXTERNAL]|01p46000002xICK|TestExpenseUpdateOrDelete.testDeleteExpense
+17:48:24.0 (525065)|HEAP_ALLOCATE|[72]|Bytes:3
+17:48:24.0 (563200)|HEAP_ALLOCATE|[77]|Bytes:152
+17:48:24.0 (579470)|HEAP_ALLOCATE|[342]|Bytes:408
+17:48:24.0 (597929)|HEAP_ALLOCATE|[355]|Bytes:408
+17:48:24.0 (615421)|HEAP_ALLOCATE|[467]|Bytes:48
+17:48:24.0 (641182)|HEAP_ALLOCATE|[139]|Bytes:6
+17:48:24.0 (653221)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:19
+17:48:24.0 (661911)|METHOD_ENTRY|[2]|01p46000002xICK|TestExpenseUpdateOrDelete.TestExpenseUpdateOrDelete()
+17:48:24.0 (666479)|STATEMENT_EXECUTE|[2]
+17:48:24.0 (671660)|STATEMENT_EXECUTE|[2]
+17:48:24.0 (675336)|METHOD_EXIT|[2]|TestExpenseUpdateOrDelete
+17:48:24.0 (710146)|HEAP_ALLOCATE|[50]|Bytes:5
+17:48:24.0 (732110)|HEAP_ALLOCATE|[56]|Bytes:5
+17:48:24.0 (738023)|HEAP_ALLOCATE|[64]|Bytes:7
+17:48:24.0 (776223)|STATEMENT_EXECUTE|[4]
+17:48:24.0 (778018)|STATEMENT_EXECUTE|[6]
+17:48:24.0 (780485)|HEAP_ALLOCATE|[6]|Bytes:136
+17:48:24.0 (1163129)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Category__c, RecordType.Name, Amount__c, Tax__c, Client_Company__c, Submitted__c FROM Expense__c WHERE Expense__c.Name = 'Test44'
+17:48:24.0 (4374433)|SOQL_EXECUTE_END|[6]|Rows:0
+17:48:24.0 (4393816)|HEAP_ALLOCATE|[6]|Bytes:4
+17:48:24.0 (4406189)|HEAP_ALLOCATE|[6]|Bytes:0
+17:48:24.0 (4497957)|HEAP_ALLOCATE|[6]|Bytes:4
+17:48:24.0 (4511240)|HEAP_ALLOCATE|[6]|Bytes:36
+17:48:24.0 (4583457)|HEAP_ALLOCATE|[6]|Bytes:46
+17:48:24.0 (4820141)|FATAL_ERROR|System.QueryException: List has no rows for assignment to SObject
+
+Class.TestExpenseUpdateOrDelete.testDeleteExpense: line 6, column 1
+17:48:24.0 (4828309)|FATAL_ERROR|System.QueryException: List has no rows for assignment to SObject
+
+Class.TestExpenseUpdateOrDelete.testDeleteExpense: line 6, column 1
+17:48:24.4 (4834636)|CUMULATIVE_LIMIT_USAGE
+17:48:24.4 (4834636)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:48:24.4 (4834636)|CUMULATIVE_LIMIT_USAGE_END
+
+17:48:24.0 (4862768)|CODE_UNIT_FINISHED|TestExpenseUpdateOrDelete.testDeleteExpense
+17:48:24.0 (5619981)|EXECUTION_FINISHED
