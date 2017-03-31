@@ -1,4 +1,4 @@
-trigger CreateExpense on Expense__c (before insert) {
+trigger CreateExpense on Expense__c (before insert, before update) {
 
     for(Expense__c ex: Trigger.new){
         

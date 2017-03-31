@@ -1,18 +1,4 @@
 {
-    "vfimagetest.resource": {
-        "createdById": "00546000000IihsAAC",
-        "createdByName": "Paulo Acosta",
-        "createdDate": "2017-03-17T18:39:54.000Z",
-        "fileName": "unpackaged/staticresources/vfimagetest.resource",
-        "fullName": "vfimagetest",
-        "id": "08146000000QfQrAAK",
-        "lastModifiedById": "00546000000IihsAAC",
-        "lastModifiedByName": "Paulo Acosta",
-        "lastModifiedDate": "2017-03-17T18:39:54.000Z",
-        "manageableState": "unmanaged",
-        "type": "StaticResource",
-        "mmState": "clean"
-    },
     "Bootstrap.resource": {
         "createdById": "00546000000IihsAAC",
         "createdByName": "Paulo Acosta",
@@ -78,7 +64,7 @@
         "id": "06646000001BW08AAG",
         "lastModifiedById": "00546000000IihsAAC",
         "lastModifiedByName": "Paulo Acosta",
-        "lastModifiedDate": "2017-03-29T20:59:04.000Z",
+        "lastModifiedDate": "2017-03-30T12:57:52.000Z",
         "manageableState": "unmanaged",
         "type": "ApexPage",
         "mmState": "clean"
@@ -259,7 +245,7 @@
         "id": "01q46000000QfG6AAK",
         "lastModifiedById": "00546000000IihsAAC",
         "lastModifiedByName": "Paulo Acosta",
-        "lastModifiedDate": "2017-03-23T13:31:29.000Z",
+        "lastModifiedDate": "2017-03-31T13:10:52.000Z",
         "manageableState": "unmanaged",
         "type": "ApexTrigger",
         "mmState": "clean"
